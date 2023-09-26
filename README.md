@@ -20,8 +20,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [(https://github.com/Kofiastro/Chat-app-CSS-illustration)]
-- Live Site URL:[(https://spiffy-peony-412440.netlify.app/)]
+- Solution URL: [(https://github.com/Kofiastro/adviceGeneratorApp)]
+- Live Site URL:[(https://advice-generator-app-6s9z-60w5etkl4-kofiastro.vercel.app/)]
 
 ## My process
 This is my first react web app using Api's.This project has taught me alot about understanding the Journey in web dev..Practicing by working on projects you don't fully understand will help you learn alot.I started off with tailwindcss and being able to integrate it to react was very ineteresting.With react i will say understanding the basic concepts of what makes a react app is the foundation to mastering react.
