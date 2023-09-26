@@ -1,5 +1,5 @@
 function ApiFetch() {
-  return 
+  return
 }
 
 export default ApiFetch

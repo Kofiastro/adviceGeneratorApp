@@ -1,7 +1,7 @@
-import { useState } from "react"
-import Footer from "./pages/Footer"
-import AdvicegeneratorUI from "./pages/advicegeneratorUI"
-import { AdviceProvider } from "./context/AdviceContext"
+import { useState } from 'react'
+import Footer from './pages/Footer'
+import AdvicegeneratorUI from './pages/advicegeneratorUI'
+import { AdviceProvider } from './context/AdviceContext'
 function App() {
   return (
     <AdviceProvider>

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react"
+import { createContext, useState } from 'react'
 
 const AdviceContext = createContext()
 //Create a provider

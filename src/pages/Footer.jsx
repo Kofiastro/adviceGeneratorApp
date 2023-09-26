@@ -1,8 +1,8 @@
 function Footer() {
   return (
     <div className='font-Manrope mx-auto text-center text-sm font-light bg-DarkGrayishBlue  text-LightCyan tracking-widest '>
-      {" "}
-      Challenge by{" "}
+      {' '}
+      Challenge by{' '}
       <a
         href='https://www.frontendmentor.io?ref=challenge'
         className='text-NeonGreen'
@@ -10,13 +10,13 @@ function Footer() {
       >
         Frontend Mentor
       </a>
-      . Coded by{" "}
+      . Coded by{' '}
       <a
         href='https://github.com/Kofiastro/'
         className='text-NeonGreen'
         target='_blank'
       >
-        Kofi Danso Amakye{" "}
+        Kofi Danso Amakye{' '}
       </a>
       .
     </div>

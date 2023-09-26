@@ -1,7 +1,7 @@
-import divideMobile from "../assets/dividemobile.svg"
-import dice from "../assets/dice.svg"
-import { useContext, useEffect } from "react"
-import AdviceContext from "../context/AdviceContext"
+import divideMobile from '../assets/dividemobile.svg'
+import dice from '../assets/dice.svg'
+import { useContext, useEffect } from 'react'
+import AdviceContext from '../context/AdviceContext'
 function advicegeneratorUI({}) {
   const { advice, adviceText } = useContext(AdviceContext)
   useEffect(() => {
@@ -10,15 +10,15 @@ function advicegeneratorUI({}) {
   //Gen and fetching  the advice Api
   const adviceApi = async () => {
     try {
-      const response = await fetch("https://api.adviceslip.com/advice")
+      const response = await fetch('https://api.adviceslip.com/advice')
       const data = await response.json()
       if (!response.ok) {
-        adviceText("Advice Loading")
+        adviceText('Advice Loading')
       }
       adviceText(data.slip.advice)
     } catch (error) {
       console.log(error)
-      adviceText("OOps!,Advice on Pause")
+      adviceText('OOps!,Advice on Pause')
     }
   }
   return (
