@@ -29,6 +29,7 @@ This is my first react web app using Api's.This project has taught me alot about
 ### Built with
 
 - React with Vite
+- Framer motion
 - TailwindCss
 
 ### What I learned

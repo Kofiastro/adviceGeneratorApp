@@ -1,4 +1,5 @@
 import divideMobile from '../assets/dividemobile.svg'
+import { motion } from 'framer-motion'
 import dice from '../assets/dice.svg'
 import { useContext, useEffect } from 'react'
 import AdviceContext from '../context/AdviceContext'
@@ -30,20 +31,35 @@ function advicegeneratorUI({}) {
           <h1 className='text-sm text-NeonGreen tracking-widest '>
             ADVICE #117
           </h1>
-          <h1 className='text-3xl font-bold  leading-10 text-LightCyan'>
-            {advice}
-          </h1>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <h1 className='text-3xl font-bold  leading-10 text-LightCyan'>
+              {advice}
+            </h1>
+          </motion.div>
           <img src={divideMobile} className='mx-auto' alt='divideMobileimage' />
         </div>
-        {/* Dice Image */}
-        <div className='mx-auto flex items-center justify-center -mb-16'>
-          <button
-            onClick={adviceApi}
-            className='Btn bg-NeonGreen p-5  hover:shadow-lg hover:shadow-NeonGreen  rounded-full'
-          >
-            <img src={dice} alt='diceSvg' />
-          </button>
-        </div>
+
+        {/* Dice Button */}
+      
+        <button className=' mx-auto flex items-center justify-center -mb-16'>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+          className='Btn bg-NeonGreen p-8  hover:shadow-lg hover:shadow-NeonGreen rounded-full '
+          onClick={adviceApi}
+         
+          />
+          <img src={dice} alt='diceSvg' className='absolute'/> 
+    
+        </button>
       </div>
     </div>
   )
