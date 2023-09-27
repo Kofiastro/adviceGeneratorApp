@@ -1,6 +1,6 @@
 import divideMobile from '../assets/dividemobile.svg'
+import { BsFillDice5Fill} from 'react-icons/bs'
 import { motion } from 'framer-motion'
-import dice from '../assets/dice.svg'
 import { useContext, useEffect } from 'react'
 import AdviceContext from '../context/AdviceContext'
 function advicegeneratorUI({}) {
@@ -57,7 +57,7 @@ function advicegeneratorUI({}) {
           onClick={adviceApi}
          
           />
-          <img src={dice} alt='diceSvg' className='absolute'/> 
+          <BsFillDice5Fill className='absolute text-2xl flex justify-center items-center mx-auto'/> 
     
         </button>
       </div>
